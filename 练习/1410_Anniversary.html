@@ -1,0 +1,227 @@
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Welcome to XTU OnlineJudge</title>
+<link rel='stylesheet' type='text/css' href='/exam/Web/Tpl/default/Public/Css/style_user.css' />
+<link rel="stylesheet" href="/markdown.css" type="text/css" />
+<link rel="stylesheet" href="/md_back.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+            processEscapes: true
+          },
+          TeX: {
+            equationNumbers: {
+              autoNumber: 'AMS'
+            }
+          },
+          "HTML-CSS": {
+            imageFont: null
+          }
+        });
+  </script>
+  <script type="text/javascript" src="/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</style>
+</head>
+<body>
+
+  <div id="header"> 
+    <div id="xtu_logo"><img src="/exam/Web/Tpl/default/Public/Images/xtu_logo.jpg" alt="XiangTan University" /></div>
+    <div id="xtu">XiangTan&nbsp;&nbsp;University<br />
+    OnlineJudge&nbsp;&nbsp;For&nbsp;&nbsp;Programming</div>
+    <div id="acm_logo"><img src="/exam/Web/Tpl/default/Public/Images/acm_small.jpg" alt="ACM/ICPC" /></div>
+  </div>
+  <div class="hr"></div>
+  <div id="menu">
+  	<div>
+    <table width="100%" border="0">
+      <tr class="menu_title">
+        <td><a href="/exam/index.php">Home Page</a></td>
+        <td><a href="/exam/index.php/problem">ALL Problems</a></td>
+        <td><a href="/exam/index.php/solution/submit">Submit Source Code</a></td>
+        <td><a href="/exam/index.php/solution/onlinestatus">Online Status</a></td>
+        <td><a href="/exam/index.php/news">F.A.Qs &amp; Help</a></td>
+      </tr>
+      <tr class="menu_title">
+        <td><a href="/exam/index.php/exam/current">Current Exams</a></td>
+        <td><a href="/exam/index.php/exam/past">Past Exams</a></td>
+        <td>Scheduled Exams</td>
+        <td><a href="/exam/index.php/user/ranklist">User Ranklist</a></td>
+        <td><a href="http://202.197.224.59/qa/" target="_blank"> Discusss </a></td>
+      </tr>     
+    </table>
+	</div>
+	<div class="hr"></div>
+    <div id="menu_left">
+		  
+	<table width="100%" border="0">
+	  <form action="" method="post" name="login">
+	  		<input name="crsf_token" type="hidden" id="crsf_token" value="64627951dd287d8acaeab37982868a17"/>
+        <tr>
+          <td>&nbsp;&nbsp;StudentID:</td>
+          <td><input name="username" type="text" id="username" tabindex="1" size="8" />
+          <input name="capture" type="hidden" id="capture" value="login" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/register">Create New Account </a></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;Password:</td>
+          <td><input name="password" type="password" id="password" tabindex="2" size="8" />
+          <input type="submit" name="Submit" value="Login" tabindex="3" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/remind">Forgot Your Password or Username</a></td>
+        </tr>
+	  </form>
+      </table>    </div>
+    <div id="menu_right">
+      <table width="100%" border="0">
+	  <form action="" method="post" name="gotoproblem">
+	  	<input name="crsf_token" type="hidden" id="crsf_token" value="b699cf8827889bf11dce6f546dbf760c"/>        <tr>
+          <td align="right">ProblemID:</td>
+          <td><input name="problem_id" type="text" id="problem_id" tabindex="11" size="8" />
+            <input type="submit" name="Submit2" value="Go Problem" tabindex="12" />
+            <input name="capture" type="hidden" id="capture" value="goproblem" /></td>
+        </tr>
+	  </form>
+	  <form action="" method="post" name="searchuser">
+	  	<input name="crsf_token" type="hidden" id="crsf_token" value="b01821f15599320e9aecb637ee90ed01"/>        <tr>
+          <td align="right">User Name:</td>
+          <td><input name="username" type="text" id="username" tabindex="21" size="8" />
+            <input type="submit" name="Submit3" value="SearchUser" tabindex="22" />
+            <input name="capture" type="hidden" id="capture" value="searchuser" /></td>
+        </tr>
+	  </form>
+      </table>
+    </div>
+  </div>
+  <div id="news">
+  	<MARQUEE scrollAmount=3 scrollDelay=150 behavior=alternate><p><font color="#0000ff"><strong>公告</strong></font>:&nbsp; <font style="background-color: rgb(255,255,255)" color="#000000"><font style="background-color: rgb(255,255,255)"><strong>支持Java，请使用Main类内含静态main方法</strong>。64位整数可以使用%I64d。</font></font></p>
+<p><font color="#339966"><strong>程序设计实践考试安排请询问教务干事老师，CSP成绩换算问题请询问王婷老师</strong></font></p>
+<p><strong><font color="#339966"><font color="#FF0000"><a href="/exam/index.php/solution/stat/cids/409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430">2023年C语言作业统计</a>  入队第一步，AK作业题，<a href="http://202.197.224.59/bm/">招新宣传点这 </a><a href="https://v.qq.com/x/page/v0812dpjirs.html">湘潭大学ACM/ICPC金牌团队</a></font></font></strong></p>
+<p>密码重置或新增账号，点<a href="https://www.wenjuan.com/s/QvQZfui/">这里</a>登记，管理员不定期操作</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><font color="#339966"><font color="#FF0000"> </font></font></strong></p>
+<p>&nbsp;</p></MARQUEE>
+  </div>
+  <div class="hr"></div>
+<div id="content">
+  <div>
+  <table width="100%" border="0">
+  <tr align="center">
+    <td colspan="3"><h2>Anniversary</h2></td>
+  </tr>
+  <tr align="center">
+    <td colspan="3">[ <a href="/exam/index.php/solution/submit/id/1410/exam_id/377">Submit Code</a> ]
+    	[ <a href="/exam/index.php/solution/top20/pid/1410">Top 20 Runs</a> ]
+    	[ <a href="/exam/index.php/solution/onlinestatus/exam_id/377/problem_id/1410">Runs Status</a> ]
+    	</td>
+  </tr>
+  <tr align="center">
+    <td width="49%" align="right">Acceteped : 86 </td>
+    <td width="2%">&nbsp;</td>
+    <td width="49%" align="left"> Submit : 171 </td>
+  </tr>
+  <tr align="center">
+    <td align="right">Time Limit : 3000 MS</td>
+    <td>&nbsp;</td>
+    <td align="left">Memory Limit : 65536 KB</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Description</h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><div><article class="markdown-body"><h1 id="anniversary">Anniversary<a class="headerlink" href="#anniversary" title="Permanent link"></a></h1>
+<h2 id="_1">题目描述<a class="headerlink" href="#_1" title="Permanent link"></a></h2>
+<p>湘大马上就要迎来自己的60周年校庆，校友们会从全国各地赶来，参加校庆，然后返回。假设有<span class="arithmatex">\(n\)</span>个城市，编号从<span class="arithmatex">\(1 \sim n\)</span>，湘潭编号为<span class="arithmatex">\(x (1 \le x \le n)\)</span>。两个城市<span class="arithmatex">\(u\)</span>和<span class="arithmatex">\(v\)</span>之间存在单向路<span class="arithmatex">\(&lt;u,v&gt;\)</span>，其路径长度为<span class="arithmatex">\(w\)</span>。校长想知道这些校友从各自城市出发，参加完校庆后，又返回各自城市的行程中最短路径中最长的是多少？作为湘大人，麻烦你帮校长计算一下。</p>
+<h2 id="_2">输入<a class="headerlink" href="#_2" title="Permanent link"></a></h2>
+<p>第一行是一个整数<span class="arithmatex">\(T(1 \le T \le 100)\)</span>，表示样例的个数。
+每个样例的第一行是<span class="arithmatex">\(3\)</span>个整数,<span class="arithmatex">\(n,e,x(1 \le n \le 1000, 1 \le e \le 10000, 1 \le x \le n)\)</span>，分别表示城市数量，路径数量，湘潭城市编号。
+以后的<span class="arithmatex">\(e\)</span>行，每行是一条路径，包含三个整数<span class="arithmatex">\(u,v,w(1\le u,v \le n,1 \le w \le 1000)\)</span>。输入保证一定有解。</p>
+<h2 id="_3">输出<a class="headerlink" href="#_3" title="Permanent link"></a></h2>
+<p>每行输出一个样例的结果。</p>
+<h2 id="_4">样例输入<a class="headerlink" href="#_4" title="Permanent link"></a></h2>
+<div class="highlight"><pre>1
+4 7 2
+1 2 7
+1 3 2
+2 3 1
+3 2 2
+3 4 5
+2 1 3
+4 2 3
+</pre></div>
+
+<h2 id="_5">样例输出<a class="headerlink" href="#_5" title="Permanent link"></a></h2>
+<div class="highlight"><pre>9
+</pre></div>
+
+<h2 id="_6">样例解释<a class="headerlink" href="#_6" title="Permanent link"></a></h2>
+<p>样例如图：</p>
+<p><img src="data:image/jpeg;base64,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" /></p>
+<h2 id="_7">提示<a class="headerlink" href="#_7" title="Permanent link"></a></h2>
+<p>巨大的输入量，请使用C风格的输入</p></article></div></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Sample Input </h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><pre></pre></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Sample Output </h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><pre></pre></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Source</h3></td>
+  </tr>
+  <tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		  <tr align="center">
+ 
+    <td colspan="3">[ <a href="/exam/index.php/solution/submit/id/1410/exam_id/377">Submit Code</a> ]
+    	[ <a href="/exam/index.php/solution/top20/pid/1410">Top 20 Runs</a> ]
+    	[ <a href="/exam/index.php/solution/onlinestatus/exam_id/377/problem_id/1410">Runs Status</a> ]
+    	</td>
+  </tr>
+</table>
+  </div>
+
+</div>
+  
+  <div class="hr"></div>
+  <div id="footer_menu">[ <a href="/exam/index.php">Home Page</a> ]&nbsp;&nbsp;[ <A HREF="javascript:self.location=document.referrer">Go Back</A> ]</div>
+  <div class="hr"></div>
+  <div id="footer">&copy;2008 XTU OnlineJudge Powered by XieBin, HuKun</div>
+</body>
+</html>

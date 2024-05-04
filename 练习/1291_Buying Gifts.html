@@ -1,0 +1,231 @@
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Welcome to XTU OnlineJudge</title>
+<link rel='stylesheet' type='text/css' href='/exam/Web/Tpl/default/Public/Css/style_user.css' />
+<link rel="stylesheet" href="/markdown.css" type="text/css" />
+<link rel="stylesheet" href="/md_back.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+            processEscapes: true
+          },
+          TeX: {
+            equationNumbers: {
+              autoNumber: 'AMS'
+            }
+          },
+          "HTML-CSS": {
+            imageFont: null
+          }
+        });
+  </script>
+  <script type="text/javascript" src="/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</style>
+</head>
+<body>
+
+  <div id="header"> 
+    <div id="xtu_logo"><img src="/exam/Web/Tpl/default/Public/Images/xtu_logo.jpg" alt="XiangTan University" /></div>
+    <div id="xtu">XiangTan&nbsp;&nbsp;University<br />
+    OnlineJudge&nbsp;&nbsp;For&nbsp;&nbsp;Programming</div>
+    <div id="acm_logo"><img src="/exam/Web/Tpl/default/Public/Images/acm_small.jpg" alt="ACM/ICPC" /></div>
+  </div>
+  <div class="hr"></div>
+  <div id="menu">
+  	<div>
+    <table width="100%" border="0">
+      <tr class="menu_title">
+        <td><a href="/exam/index.php">Home Page</a></td>
+        <td><a href="/exam/index.php/problem">ALL Problems</a></td>
+        <td><a href="/exam/index.php/solution/submit">Submit Source Code</a></td>
+        <td><a href="/exam/index.php/solution/onlinestatus">Online Status</a></td>
+        <td><a href="/exam/index.php/news">F.A.Qs &amp; Help</a></td>
+      </tr>
+      <tr class="menu_title">
+        <td><a href="/exam/index.php/exam/current">Current Exams</a></td>
+        <td><a href="/exam/index.php/exam/past">Past Exams</a></td>
+        <td>Scheduled Exams</td>
+        <td><a href="/exam/index.php/user/ranklist">User Ranklist</a></td>
+        <td><a href="http://202.197.224.59/qa/" target="_blank"> Discusss </a></td>
+      </tr>     
+    </table>
+	</div>
+	<div class="hr"></div>
+    <div id="menu_left">
+		  
+	<table width="100%" border="0">
+	  <form action="" method="post" name="login">
+	  		<input name="crsf_token" type="hidden" id="crsf_token" value="26a9f8f166601157146f6586ee69a3bc"/>
+        <tr>
+          <td>&nbsp;&nbsp;StudentID:</td>
+          <td><input name="username" type="text" id="username" tabindex="1" size="8" />
+          <input name="capture" type="hidden" id="capture" value="login" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/register">Create New Account </a></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;Password:</td>
+          <td><input name="password" type="password" id="password" tabindex="2" size="8" />
+          <input type="submit" name="Submit" value="Login" tabindex="3" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/remind">Forgot Your Password or Username</a></td>
+        </tr>
+	  </form>
+      </table>    </div>
+    <div id="menu_right">
+      <table width="100%" border="0">
+	  <form action="" method="post" name="gotoproblem">
+	  	<input name="crsf_token" type="hidden" id="crsf_token" value="79e282e29e0c98cc222dd960fe65fa59"/>        <tr>
+          <td align="right">ProblemID:</td>
+          <td><input name="problem_id" type="text" id="problem_id" tabindex="11" size="8" />
+            <input type="submit" name="Submit2" value="Go Problem" tabindex="12" />
+            <input name="capture" type="hidden" id="capture" value="goproblem" /></td>
+        </tr>
+	  </form>
+	  <form action="" method="post" name="searchuser">
+	  	<input name="crsf_token" type="hidden" id="crsf_token" value="b8a1db35edb4d64007c5601af9b16451"/>        <tr>
+          <td align="right">User Name:</td>
+          <td><input name="username" type="text" id="username" tabindex="21" size="8" />
+            <input type="submit" name="Submit3" value="SearchUser" tabindex="22" />
+            <input name="capture" type="hidden" id="capture" value="searchuser" /></td>
+        </tr>
+	  </form>
+      </table>
+    </div>
+  </div>
+  <div id="news">
+  	<MARQUEE scrollAmount=3 scrollDelay=150 behavior=alternate><p><font color="#0000ff"><strong>公告</strong></font>:&nbsp; <font style="background-color: rgb(255,255,255)" color="#000000"><font style="background-color: rgb(255,255,255)"><strong>支持Java，请使用Main类内含静态main方法</strong>。64位整数可以使用%I64d。</font></font></p>
+<p><font color="#339966"><strong>程序设计实践考试安排请询问教务干事老师，CSP成绩换算问题请询问王婷老师</strong></font></p>
+<p><strong><font color="#339966"><font color="#FF0000"><a href="/exam/index.php/solution/stat/cids/409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430">2023年C语言作业统计</a>  入队第一步，AK作业题，<a href="http://202.197.224.59/bm/">招新宣传点这 </a><a href="https://v.qq.com/x/page/v0812dpjirs.html">湘潭大学ACM/ICPC金牌团队</a></font></font></strong></p>
+<p>密码重置或新增账号，点<a href="https://www.wenjuan.com/s/QvQZfui/">这里</a>登记，管理员不定期操作</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><font color="#339966"><font color="#FF0000"> </font></font></strong></p>
+<p>&nbsp;</p></MARQUEE>
+  </div>
+  <div class="hr"></div>
+<div id="content">
+  <div>
+  <table width="100%" border="0">
+  <tr align="center">
+    <td colspan="3"><h2>Buying Gifts</h2></td>
+  </tr>
+  <tr align="center">
+    <td colspan="3">[ <a href="/exam/index.php/solution/submit/id/1291/exam_id/428">Submit Code</a> ]
+    	[ <a href="/exam/index.php/solution/top20/pid/1291">Top 20 Runs</a> ]
+    	[ <a href="/exam/index.php/solution/onlinestatus/exam_id/428/problem_id/1291">Runs Status</a> ]
+    	</td>
+  </tr>
+  <tr align="center">
+    <td width="49%" align="right">Acceteped : 3152 </td>
+    <td width="2%">&nbsp;</td>
+    <td width="49%" align="left"> Submit : 6792 </td>
+  </tr>
+  <tr align="center">
+    <td align="right">Time Limit : 1000 MS</td>
+    <td>&nbsp;</td>
+    <td align="left">Memory Limit : 65536 KB</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Description</h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><div><div class="container">
+<div id="markup"><article id="content" class="markdown-body">
+<h1>Buying Gifts</h1>
+<h2>题目描述</h2>
+<p>快到年末了，Boss Liu准备在年会上发些礼物，由于不想礼物的价格区别太大，Boss Liu希望最好的礼物与最差的礼物价格相差越小越好。  当然，如果存在相同的选择，Boss Liu希望花的钱越少越好。<br />
+Boss Liu把这个买礼物的任务给你，你决定写个程序来帮助自己计算一下。</p>
+<h2>输入</h2>
+<p>第一行是一个整数K，表示样例的个数。<br />
+每个样例的第一行是一个整数<mathjax>$n,m(1 \le m \le n \le 1000)$</mathjax>，分别表示可购买的礼物的个数和实际需要购买的个数。<br />
+每个样例的第二行是n个整数<mathjax>$x_i,i=1,2,\cdots,n\,(1 \le x_i \le 100)$</mathjax>，表示n个礼物的价格。</p>
+<h2>输出</h2>
+<p>每个样例输出两个整数，分别表示最小的价差以及总的花费，中间用一个空格隔开。</p>
+<h2>样例输入</h2>
+<div class="codehilite">
+<pre>
+2
+5 3 
+10 5 9 7 2 
+5 1 
+10 5 9 7 2
+</pre>
+</div>
+<h2>样例输出</h2>
+<div class="codehilite">
+<pre>
+3 26 
+0 2
+</pre>
+</div>
+<h2>线索</h2>
+<p>第一个样例，购买10,9,7的礼物的差值最小为3，总花费是26。<br />
+第二个样例，因为只买一样所以差值都是0，最小花费是2。</p>
+</article></div>
+</div></div></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Sample Input </h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><pre></pre></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Sample Output </h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><pre></pre></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Source</h3></td>
+  </tr>
+  <tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		  <tr align="center">
+ 
+    <td colspan="3">[ <a href="/exam/index.php/solution/submit/id/1291/exam_id/428">Submit Code</a> ]
+    	[ <a href="/exam/index.php/solution/top20/pid/1291">Top 20 Runs</a> ]
+    	[ <a href="/exam/index.php/solution/onlinestatus/exam_id/428/problem_id/1291">Runs Status</a> ]
+    	</td>
+  </tr>
+</table>
+  </div>
+
+</div>
+  
+  <div class="hr"></div>
+  <div id="footer_menu">[ <a href="/exam/index.php">Home Page</a> ]&nbsp;&nbsp;[ <A HREF="javascript:self.location=document.referrer">Go Back</A> ]</div>
+  <div class="hr"></div>
+  <div id="footer">&copy;2008 XTU OnlineJudge Powered by XieBin, HuKun</div>
+</body>
+</html>
